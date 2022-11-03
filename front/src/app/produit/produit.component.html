@@ -1,0 +1,70 @@
+<div *ngIf="!userId">
+    <app-header></app-header>
+</div>
+<div *ngIf="userId">
+    <app-navbar-client></app-navbar-client>
+</div>
+
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row" *ngIf="produit">
+        <div class="col-md-6">
+            <section class="menu" id="menu">
+
+                <div class="contenu">
+
+                    <div class="box">
+                        <div class="imbox">
+                            <img src="{{produit.url}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <div class="details">
+                <div class="titre">{{produit.name}}</div>
+                <hr>
+                <div class="price">
+                    <span>{{produit.price}}</span><span>TND</span>
+
+                </div>
+                <div class="cadre">
+                    <div class="con">
+                        <div class="des">
+                            {{produit.descrption}}
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mat">
+                            <strong>Matières :</strong>
+                        </div>
+                        <div class="str">
+                            <span>Structure : </span><span>{{produit.matiere}}</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mat">
+                            <strong>Dimensions :</strong>
+                        </div>
+                        <div class="str">
+                            <span>Largeur : </span><span>{{produit.largeur}}</span>
+                        </div>
+                        <div class="str">
+                            <span>Langeur : </span><span>{{produit.langeur}}</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bt">
+                    <input type="number" class="form-control"  [(ngModel)]="nbr">
+                    <button type="submit" mat-flat-button style="background-color:#2a4963 ;" (click)="ajout()">+Panier</button>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>

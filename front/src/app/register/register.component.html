@@ -1,0 +1,221 @@
+<app-header></app-header>
+<div class="container">
+    <div class="main-body">
+        <button id="xx" (click)="clean()">
+            <mat-icon>
+                <div id="x">clear</div>
+            </mat-icon>
+        </button>
+        <h2>Créer un compte</h2>
+        <form class="row g-3" >
+            <div class="alert alert-danger" role="alert" *ngIf="err">
+                {{err}}
+              </div>
+
+            <div class="row" id="con">
+
+
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <hr>
+                        <label for="username" class="form-label">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <mat-icon>account_circle</mat-icon>
+                                </div>
+                                <div class="col"><strong>Identifiant</strong></div>
+                            </div>
+                        </label>
+                        <input required type="text" class="form-control" name="username" [(ngModel)]="username">
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <hr>
+                        <label for="pass" class="form-label">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <mat-icon>https</mat-icon>
+                                </div>
+                                <div class="col"><strong>Mot de passe</strong></div>
+                            </div>
+                        </label>
+                        <input required type="password"  class="form-control" name="pass" [(ngModel)]="pass">
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <hr>
+                        <label for="prenom" class="form-label">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <mat-icon>perm_identity</mat-icon>
+                                </div>
+                                <div class="col"><strong>Prénom</strong></div>
+                            </div>
+                        </label>
+                        <input required type="text"  class="form-control" name="prenom" [(ngModel)]="prenom">
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <hr>
+                        <label for="nom" class="form-label">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <mat-icon>perm_identity</mat-icon>
+                                </div>
+                                <div class="col"><strong>Nom</strong></div>
+                            </div>
+                        </label>
+                        <input required type="text"  class="form-control" name="nom" [(ngModel)]="nom">
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <hr>
+                        <label for="cin" class="form-label">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <mat-icon>featured_play_list</mat-icon>
+                                </div>
+                                <div class="col"><strong>CIN</strong></div>
+                            </div>
+                        </label>
+                        <input type="text" class="form-control" name="cin" [(ngModel)]="cin">
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <hr>
+                        <label for="email" class="form-label">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <mat-icon>mail</mat-icon>
+                                </div>
+                                <div class="col"><strong>Email</strong></div>
+                            </div>
+                        </label>
+                        <input type="email" required class="form-control" name="email" [(ngModel)]="email">
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <hr>
+                        <label for="tel" class="form-label">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <mat-icon> local_phone</mat-icon>
+                                </div>
+                                <div class="col"><strong>Téléphone</strong></div>
+                            </div>
+                        </label>
+                        <input type="text" required  class="form-control" name="tel" [(ngModel)]="tel">
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <hr>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <mat-icon>wc</mat-icon>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="sex" class="form-label"><strong>Genre</strong></label>
+                            </div>
+                        </div>
+                        <select id="sex" required  class="form-control" name="genre" [(ngModel)]="genre">
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                        </select>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <mat-icon>child_care</mat-icon>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="Nai" class="form-label"><strong>Naissance</strong></label>
+                            </div>
+                        </div>
+                        <input required type="date" class="form-control"  name="nai" [(ngModel)]="nai">
+
+
+                    </div>
+                </div>
+                <hr>
+
+
+                <div class="col-12">
+                    <hr>
+                    <button (click)="register()" type="submit" id="adh" mat-flat-button style="background-color:#2a4963 ;">+ Ajouter</button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+</div>

@@ -1,0 +1,65 @@
+<app-header></app-header>
+
+
+
+
+
+
+
+<div class="container">
+  <img [src]='avatar' width="70" height="70">
+  <div class="main-body">
+
+
+    <button id="xx">
+      <mat-icon>
+        <div id="x"></div>
+      </mat-icon>
+    </button>
+
+    <div *ngIf="validation" class="alert alert-danger" role="alert">Merci de remplir tous les champs</div>
+    <form (ngSubmit)="onLogin()">
+
+      <div class="col-md-12">
+        <h2> Se connecter</h2>
+      </div>
+      <hr>
+      <label>
+        <div class="row">
+          <div class="col-md-2">
+            <mat-icon>email</mat-icon>
+          </div>
+          <div class="col"><strong>Email</strong></div>
+        </div>
+      </label>
+
+      <input type="text" name="email" class="form-control" placeholder="Identifiant" [(ngModel)]="email">
+
+      <hr>
+      <label>
+        <div class="row">
+          <div class="col-md-2">
+            <mat-icon>vpn_key</mat-icon>
+          </div>
+          <div class="col"><strong>Mot de passe</strong></div>
+        </div>
+      </label>
+
+      <input type="password" name="password" class="form-control" placeholder="*********" [(ngModel)]="password">
+
+      <hr>
+      <button id='button1' mat-raised-button style="background-color: #2a4963; color : white;">Se connecter</button>
+      <a id="a" ><strong>mot de passe oublié ?</strong> </a>
+
+
+
+
+
+    </form>
+
+  </div>
+
+
+
+
+</div>

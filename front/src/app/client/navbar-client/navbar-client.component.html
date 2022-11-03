@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg ">
+    <div class="logo">
+        <img src="../../assets/images/tunissss.png" alt="">
+    </div>
+
+    <div class="logos">
+        <div>
+
+            <span><img src="../../assets/images/insta.png" alt=""></span> tunis_count5<span></span>
+        </div>
+        <div>
+
+            <span><img src="../../assets/images/fb.png" alt=""></span> https://www.facebook.com/tuniscount<span></span>
+        </div>
+        
+  
+    </div>
+
+
+    <div class="conseil">
+        <div class="headphone">
+            <mat-icon>headphones</mat-icon><strong> Conseil et vente</strong>
+        </div>
+        <div class="num"> 52 128 001</div>
+        <div class="num"> 72 286 659</div>
+    </div>
+    <div class="cmm">
+
+        <a mat-stroked-button color="primary" (click)="cmd()">Mes commandes</a>
+    </div>
+    <div class="panier" (click)="panier()">
+
+        <button id="shop" mat-mini-fab matBadge="{{nbPanier}}" matBadgeColor="warn" aria-label="Example icon button with a home icon" (click)="panier()">
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+    </div>
+
+    
+
+    <div class="bt">
+        <button mat-raised-button (click)="logout()">logout</button>
+    </div>
+
+</nav>
+

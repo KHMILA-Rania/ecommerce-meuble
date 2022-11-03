@@ -1,0 +1,187 @@
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>#New Collection</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</p>
+        <a href="#" class="btn1">Découvrir</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>à</span> Propos De Nous</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="../../assets/images/qui.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="expert" id="expert">
+    <div class="titre">
+        <h2 class="titre-texte"><span>C</span>atalogues</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/catcat1.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Balançoire Alacati</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/catcat2.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Balançoire Alacati</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/catcat3.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Balançoire Alacati</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/catcat4.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Balançoire Alacati</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/catcat5.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Balançoire Alacati</h3>
+            </div>
+        </div>
+      
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte">Nos <span>P</span>roduits</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/khalil2.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Balançoire Alacati</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/khalil3.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Balançoire Alacati</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/khalil4.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Balançoire Alacati</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/cnp1.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Balançoire Alacati</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/cnp2.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Special salade</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="../../assets/images/cnp3.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Special salade</h3>
+            </div>
+        </div>
+   
+
+    </div>
+
+    <div class="titre">
+        <a href="#" class="btn1">Voir Plus</a>
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <div class="titre noir">
+        <h2 class="titre-text"><span>C</span>ontact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </div>
+
+    <div class="contactform">
+        <div class="alert alert-danger" role="alert" *ngIf="err">
+            {{err}}
+        </div>
+        <h3>Envoyer un message</h3>
+        <div class="inputboite">
+            <input type="text" placeholder="Nom" name="name" [(ngModel)]="name">
+        </div>
+        <div class="inputboite">
+            <input type="text" placeholder="email" name="email" [(ngModel)]="email">
+        </div>
+        <div class="inputboite">
+            <textarea placeholder="message" name="msg" [(ngModel)]="msg"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="submit" value="envoyer" (click)="envoyer()">
+        </div>
+    </div>
+
+</section>

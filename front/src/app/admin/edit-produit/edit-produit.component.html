@@ -1,0 +1,133 @@
+<app-navbar-admin></app-navbar-admin>
+<div class="container">
+    <div class="titre">Modifier Produit</div>
+    <hr>
+    <form class="row g-3">
+        <div class="row" id="con">
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Nom de Produit</strong></div>
+                        </div>
+                    </label>
+                    <input type="text" required class="form-control" name="name" [(ngModel)]="name">
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Choisir le Cataloge</strong></div>
+                        </div>
+                    </label>
+                    <select required class="form-control" name="selected" [(ngModel)]="seldected">
+                        <option *ngFor="let c of cat" class="text-uppercase" value="{{c._id}}">{{c.name}}</option>
+                 
+                    </select>
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Nom d'image</strong></div>
+                        </div>
+                    </label>
+                    <input type="text" required class="form-control" name="url" [(ngModel)]="url">
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Prix</strong></div>
+                        </div>
+                    </label>
+                    <input type="number" required class="form-control" name="prix" [(ngModel)]="prix">
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Descripition</strong></div>
+                        </div>
+                    </label>
+                    <input type="text" required class="form-control" name="des" [(ngModel)]="des">
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Matières </strong></div>
+                        </div>
+                    </label>
+                    <input type="text" required class="form-control" name="mat" [(ngModel)]="mat">
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Langeur</strong></div>
+                        </div>
+                    </label>
+                    <input type="text" required class="form-control" name="lan" [(ngModel)]="lan">
+                    
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Largeur</strong></div>
+                        </div>
+                    </label>
+                    <input type="text" required class="form-control" id="text" name="lar" [(ngModel)]="lar">
+                    
+                </div>
+                <hr>
+            </div>
+            <div class="col-12">
+                <div class="botn">
+                    <button (click)="modifier()" mat-raised-button>modifier</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>

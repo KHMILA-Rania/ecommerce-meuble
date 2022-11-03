@@ -1,0 +1,52 @@
+<app-navbar-admin></app-navbar-admin>
+<div class="container">
+    <div class="titre">Modifier Cataloge</div>
+    <hr>
+    <form class="row g-3">
+        <div class="row" id="con">
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Nom de Cataloge</strong></div>
+                        </div>
+                    </label>
+                    <input type="text" required class="form-control" name="name" [(ngModel)]="name">
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <mat-icon>category</mat-icon>
+                            </div>
+                            <div class="col"><strong>Choisir le nav</strong></div>
+                        </div>
+                    </label>
+                    <select required class="form-control" name="selected" [(ngModel)]="selected">
+                        
+                        <option  class="text-uppercase" value="1">Canapés</option>
+                        <option  class="text-uppercase" value="2">Salle à manger</option>
+                        <option  class="text-uppercase" value="3">chambre à coucher</option>
+                        <option  class="text-uppercase" value="4">bureau</option>
+                        <option  class="text-uppercase" value="5">meuble</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <hr>
+                <div class="botn">
+                    <button mat-raised-button (click)="modifier()">Modifier</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+

@@ -1,0 +1,37 @@
+<app-navbar-admin></app-navbar-admin>
+
+<div class="container">
+    <div class="titre">Communication</div>
+    <hr>
+    <div class="row">
+        
+        <div class="col-sm-12" *ngIf="mesg">
+            <div class="card" *ngFor="let m of mesg">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <mat-icon>
+                            person
+                        </mat-icon>
+                        <div>
+                            {{m.name}}
+                        </div>
+                    </h4>
+                    <h4>{{m.email}}</h4>
+                    <hr>
+                    <div class="card-text">
+                        <mat-icon>
+                            forum
+                        </mat-icon><br>
+                        <div>
+                            {{m.message}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>

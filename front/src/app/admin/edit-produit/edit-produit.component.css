@@ -1,0 +1,38 @@
+.container{
+    margin-top: 30px;
+}
+
+.titre{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color:#2a4963 ;
+}
+
+.delete{
+    color: red;
+    cursor: pointer;
+}
+
+.scoler{
+    height: 400px;
+    overflow: auto;
+}
+
+button{
+    margin-top: 20px;
+    width: 20%;
+    background-color: #2a4963;
+    color :aliceblue;
+    
+
+}
+
+form{
+    border: 1px dotted rgb(171, 168, 168);
+    padding: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+

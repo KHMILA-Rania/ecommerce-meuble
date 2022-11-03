@@ -1,0 +1,101 @@
+.container{
+    margin-top: 30px;
+}
+
+.menu .contenu .box{
+
+    width: 400px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
+}
+
+.menu .contenu .box .imbox{
+
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.menu .contenu .box .imbox img{
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.menu .contenu .box .text{
+    
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+.titre{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color:#2a4963 ;
+}
+
+.des{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.details{
+    margin-top: 20px;
+    height: 450px;
+}
+.price{
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2a4963;
+}
+
+.cadre{
+    border: 1px dotted rgb(133, 131, 131);
+    height: 355px;
+    margin-top: 20px;
+
+}
+
+.con{
+    padding: 20px 30px;
+}
+
+.mat{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.str{
+    margin-left: 30px;
+    color : rgb(133, 131, 131);
+    margin-top: 5px;
+}
+
+button{
+    margin-top: 20px;
+    color: #fff;
+    background-color: #2a4963;
+    height: 50px;
+    width: 200px;
+}
+
+.bt{
+    display: flex;
+}
+input{
+    margin-left: 10px;
+    height: 50px;
+    margin-top: 20px;
+    width: 80px;
+
+
+}

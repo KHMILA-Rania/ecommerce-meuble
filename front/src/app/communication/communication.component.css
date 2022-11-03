@@ -1,0 +1,61 @@
+.container{
+    margin-top: 30px;
+}
+
+.titre{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color:#2a4963 ;
+}
+
+button{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.user{
+    font-weight: bold;
+    display: flex;
+    font-family: cursive;
+    
+}
+.role{
+    margin-left: 3px;
+    font-weight :lighter;
+    color :navy;
+    font-family: cursive;
+}
+
+.content{
+    font-family: cursive;
+    color :rgb(59, 59, 59);
+}
+table{
+    border: 1px solid grey;
+    
+}
+.col-sm-12{
+    margin-top: 5px;
+}
+
+.card{
+    margin-top: 10px;
+}
+
+h4{
+    font-weight: bold;
+    display: flex;
+}
+h5{
+    font-weight: bold;
+}
+.card-text{
+    font-family: cursive;
+    display: flex;
+}
+
+.card-title{
+    color : #2a4963
+}
+

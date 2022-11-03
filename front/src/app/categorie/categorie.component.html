@@ -1,0 +1,33 @@
+<div *ngIf="!userId">
+    <app-header></app-header>
+</div>
+<div *ngIf="userId">
+    <app-navbar-client></app-navbar-client>
+</div>
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="titre">Canapé</div>
+    <hr>
+    <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+    </div>
+
+
+    <section class="menu" id="menu">
+        
+        <div class="contenu">
+            <div class="box" *ngFor="let p of produit" >
+                <div class="imbox" (click)="nav(p._id)">
+                    <img src="{{p.url}}" alt="">
+                </div>
+                <div class="text">
+                    <h3>{{p.name}}</h3>
+                </div>
+            </div>
+        </div>
+
+     
+    </section>
+</div>

@@ -1,0 +1,21 @@
+li{
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logo{
+    padding: 5px;
+}
+
+img{
+    height: 60px;
+}
+
+button{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: #2a4963;;
+    color: white;
+}

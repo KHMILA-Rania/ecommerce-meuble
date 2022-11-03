@@ -1,0 +1,56 @@
+.headphone{
+    display: flex;
+}
+
+.num {
+    margin-left: 25px;
+}
+
+.conseil{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    padding: 5px;
+}
+
+button{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: #2a4963;;
+    color: white;
+}
+.bt{
+    color: yellow;
+
+}
+.logo img{
+    height: 70px;
+}
+
+.logos{
+    margin-left: 50px;
+}
+
+.logos img{
+    height: 15px;
+    width: 15px;
+}
+
+.panier{
+    margin-right: 200px;
+    
+}
+
+#shop{
+    background-color: #2a4963;
+}
+
+.cmm{
+    margin-right: 80px;
+    cursor: pointer;
+    margin-bottom: 10px;
+   
+}
+
