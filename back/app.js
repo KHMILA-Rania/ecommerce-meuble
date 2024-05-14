@@ -3,9 +3,10 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
+require('dotenv').config();
+const mongo=process.env.db;
 
-
-mongoose.connect('mongodb://localhost/tuniscount', {
+mongoose.connect(mongo, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
